@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "manteka";
+    src: url("font/manteka/manteka.woff2") format("woff2"),
+           url("font/manteka/manteka.woff") format("woff"),
+             url("font/manteka/manteka.ttf") format("ttf");
+   }
+
+*{
+    overflow-x: hidden;
+}
+
+@media (max-width: 767px){
+
+    .menu-desktop{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img{
+    width: 100%;
+    height: 100%;
+    }
+
+    h1.headerH1-xs{
+        font-size: 170%;
+    }
+
+    .footerLogo{
+        overflow: hidden;
+        font-size: 400%;
+    }
+    
+    .section-logo-lg{
+        display: none;
+    }
+
+    .section-logo{
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0%;
+    }
+    
+    .formulaire-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    .menu-desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    h1.headerH1-xl{
+        font-size: 390%;
+    }
+  
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionImg:hover{ /*pour format Laptop/Tablet*/
+        position: relative; 
+        top: -70px;
+        transition-property: top;
+        transition-duration: 3s, 5s;
+    }
+
+    .section-logo{
+        display: none;
+    }
+
+    .footerLogo-xs{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        font-size: 599%;
+        padding-top: 25%;
+    }
+
+    .formulaire{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formulaire-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a.fontsize-navbar{
+        font-size: 300%;
+    }
+}
+
+
+
+/*Header*/
+
+
+.headerH1{
+    text-align: center;
+    font-size: 220%;
+    text-transform: uppercase;
+    font-family: "manteka";
+    color: black;
+}
+
+.headerH1padding{
+    margin: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+/* Main */
+
+
+.pFont{
+    font-family: "manteka";
+    font-size: 75%;
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+section{
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(190, 46, 71);
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.section-img{
+    background: none;
+}
+
+img.main-img{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+img.main-img:last-child{
+    box-shadow: 5px 5px 3px 3px rgba(87, 0, 0, 0.383);
+    margin-bottom: 10%;
+}
+
+
+
+.bg-mosaique{
+    background: url("media/background+header/background.png") no-repeat;
+    background-size: 100% 100%;    
+}
+
+/*Formulaire */
+
+.formulaire{
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+label.formulaire-champs{
+    /* display: flex; */
+    color: white;
+    padding-left: 0;
+}
+
+input{
+    background: none;
+}
+
+
+textarea.form-control-background{
+    background: none;
+    resize: none;
+}
+
+
+/*Footer*/
+
+.logo{
+    color: white;
+    max-height: 12%;
+    max-width: 12%;
+} 
+
+nav.logoflex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footerBG{
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url("media/img/footer4.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.section-padding-bottom{
+    padding-bottom: 0;
+}
